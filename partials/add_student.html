@@ -1,0 +1,58 @@
+           
+            <h2>Add Student</h2>
+
+
+
+
+<div class='row'>       <!-- begin bootstrap grid section for 2 columns -- -->
+
+<div class="col-md-6">  <!-- begin left column ----- -->
+    <div class="form-group">
+        <label for="sid">Student ID:</label>
+        <input type="text" class="form-control" id="sid" ng-model="sid">
+    </div>
+
+   <div class="form-group">
+     <label for="first">First Name:</label>
+     <input type="text" class="form-control" id="first" ng-model="first_name">
+   </div>
+   <div class="form-group">
+      <label for="last">Last Name:</label>
+      <input type="text" class="form-control" id="last" ng-model="last_name">
+   </div>
+   <div class="form-group">
+      <label for="hrs_comp">Hrs Completed:</label>
+      <input type="text" class="form-control" id="hrs_comp" ng-model="hrs_completed">
+   </div>
+   <div class="form-group">
+      <label for="hrs_attempt">Hrs Attempted:</label>
+      <input type="text" class="form-control" id="hrs_attempt" ng-model="hrs_attempted">
+   </div>
+
+</div> <!-- end left column ----- -->
+
+<div class="col-md-6"> <!-- begin right column ----- -->
+
+   <div class="form-group">
+      <label for="gpa_pts">GPA Points:</label>
+      <input type="text" class="form-control" id="gpa_pts" ng-model="gpa_points">
+   </div>
+   <div class="form-group">
+      <label for="major">Major:</label>
+      <input type="text" class="form-control" id="major" ng-model="major">
+   </div>
+   <div class="form-group">
+      <label for="advisor">Advisor ID:</label>
+     <input type="text" class="form-control" id="advisor" ng-model="advisor_id">
+   </div>
+   <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" ng-model="email">
+   </div>
+
+</div> <!-- end right column ----- -->
+           <button type="button" class="btn btn-primary" ng-click="addRecord()">Add Student</button>
+           
+        <br><br>
+		{{status}} <!-- place to print status or request -->
+		<br><br>
